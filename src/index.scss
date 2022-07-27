@@ -1,0 +1,31 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+$theme-colors: (
+  "primary": #fff,
+  "secondary": $secondary,
+  "success": $success,
+  "info": #ddd,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark,
+);
+
+header {
+  color: yellow;
+  background-color: $blue-400;
+
+  .dropdown-toggle::after {
+    display: none !important;
+  }
+  
+  .dropdown {
+    .btn {
+      height: 100%;
+      background-color: black !important;
+    }
+    .dropdown-menu {
+      position: absolute !important;
+    }
+  }
+}
